@@ -187,7 +187,6 @@ spplot(FranceDep, "Voiture..camion..fourgonnette", col.regions=couleurs(101),  a
 
 
 ### ############### Part.des.ménages.ayant.au.moins.1.voiture.2016
-dt0$Part.des.ménages.ayant.au.moins.1.voiture.2016
 concordance <- dt0[indD, "Part.des.ménages.ayant.au.moins.1.voiture.2016"]; concordance
 FranceDep$Part.des.ménages.ayant.au.moins.1.voiture.2016<- concordance
 echelle <- c(35,84,7,86, 88,90,92, 100 ); echelle
