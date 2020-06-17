@@ -125,7 +125,8 @@ legend("topright", legend=c("200 à 8311 (841)", "8330 à 27179 (59)
 ", "28955 à 57292 (18)", "61744 à 93721 (7)", "105011 à 214750 (5)"),
        col=c("green4","tan1", "blue","darkorchid2","red"), 
        lwd=2,lty=1, cex=0.65)
-legendCirclesSymbols(var = c(min(E(g)$fij),max(E(g)$fij)),
+Eg <- attract[!attract$id %in% listExcl,][,2]
+legendCirclesSymbols(var = c(min(Eg),max(Eg)),
                      title.txt = "Nombre d'arrivées", 
                      col = "orange", inches = 0.24)
 mtext(text = " Flux domicile - lieu de travail 2016 (hors Ile de France)",
